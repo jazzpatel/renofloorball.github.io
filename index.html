@@ -15,7 +15,7 @@
     border: 2px #333 solid;
 }
 
-#imageContainer img {
+#imageContainer img  {
     animation: kenburns 20s infinite;
 }
 
@@ -78,13 +78,20 @@ body {
     text-align: left;
     width: 800px;
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
 }
 
 div#slider {
     overflow: hidden;
 }
 
-div#slider figure img {
+div#slider figure img  {
+    width: 20%;
+    float: left;
+    height: 500px;
+}
+div#slider figure video  {
     width: 20%;
     float: left;
     height: 500px;
@@ -99,9 +106,37 @@ div#slider figure {
     font-size: 0;
     animation: 30s slidy infinite;
 }
+
+
+body#video-holder {
+    position: fixed;
+    top: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    z-index: 0;
+}
+
+
 </style>
 
 <body id="myPage">
+
+
+  <!--
+  <div id="video-holder" class="video-holder">
+      <div data-personalize-entity-id="block/1966" id="block-block-421" class="block block--block block--block-421">
+          <div class="block__content">
+              <video width="100%" height="100%" autoplay="" loop="" id="vd_div">
+                  <source src="https://s3.amazonaws.com/web.toughmudder.com/Landing%20Pages/TMHALF_Homepage_10s_v1_1.mp4"> Your browser does not support this video format.
+                  </video>
+          </div>
+      </div>
+  </div>
+  -->
+
     <div id="page-wrap">
         <!-- Side Navigation on click 
 <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2" id="mySidenav">
@@ -164,10 +199,17 @@ div#slider figure {
                     <figure>
                         <!-- style="width:100%;min-height:350px;max-height:600px;" -->
                         <img src="images/goalie2.jpg" alt>
+                        <video autoplay="" loop="" id="vd_div">
+                            <source src="videos/rfc.mp4"> Your browser does not support this video format.
+                        </video>
+
                         <img src="images/windedwarriorbanner.jpg" alt>
                         <img src="images/floorballSinglePlayerAction2.jpg" alt>
                         <img src="images/goalie1.jpg" alt>
-                        <img src="images/goalfloorball.jpg" alt>
+                        <!--<img src="images/goalfloorball.jpg" alt>-->
+                        
+                    
+
                     </figure>
                     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
                         <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-xlarge w3-theme w3-hover-teal" title="Joinortryout">JOIN US!</button>
@@ -254,7 +296,7 @@ div#slider figure {
                         <p>Like indoor hockey but played with light-weight fiberglass or carbon fibre sticks</p>
                         <p>Played in many countries around the world</p>
                         <p>Rapidly growing and focus is on speed and skill</p>
-                        <p>Contender as an Olympic </p>
+                        <p>Contender as an Olympic sport</p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
@@ -462,6 +504,9 @@ function constructEmailRef()
         }
         </script>
     </div>
+
+
+
 </body>
 
 </html>
