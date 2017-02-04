@@ -77,7 +77,7 @@
         (function() {
             _this.pos = {};
             init();
-            console.log(_this);
+            //console.log(_this);
         })();
 
         function init() {
