@@ -9,9 +9,11 @@
     <meta name="keywords" content="reno, floorball, innebandy, unihoc, salibandy, hockey, street, roller" />
     <meta name="author" content="RenoFloorball@gmail.com" />
     <link rel="shortcut icon" href="../favicon.ico">
+    <!--
     <link rel="stylesheet" type="text/css" href="dist/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/component.css" />
+    -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
     <!--[if IE]>
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -87,14 +89,14 @@
 
 body {
     margin: 0;
-    background: #191919 url(images/bg.jpg) top center no-repeat;
+  
     background-size: 100% auto;
     text-align: center;
 }
 
 #page-wrap {
     text-align: left;
-    width: 800px;
+    width: 1024px;
     margin: 0 auto;
     z-index: 99;
     position: relative;
@@ -149,6 +151,10 @@ body#video-holder {
     border-bottom-right-radius: 15px;
 }
 
+.content {
+   background: url(images/carbon_fibre.png);
+ }
+
 </style>
 
 <script>
@@ -163,7 +169,7 @@ body#video-holder {
 </script>
 
 <body id="myPage">
-    <div class="container demo-2">
+    <div class="">
         <div class="content" style="position: relative">
            
             <!-- /container -->
@@ -259,8 +265,10 @@ body#video-holder {
                     <div class="w3-modal-content w3-card-8 w3-animate-top">
                         <header class="w3-container w3-teal">
                             <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
-                            <h4>We welcome new players to our team!</h4>
+                            <center>
+                            <h4>We always welcome new players to our team!</h4>
                             <h5>If you would like some additional information please email us at  renofloorball@gmail.com </h5>
+                            </center>
                         </header>
                         <footer class="w3-container w3-teal">
                             <p></p>
@@ -420,6 +428,28 @@ body#video-holder {
     </div>
 </div>
 -->
+
+
+
+                <!-- Video Container -->
+                <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+                    <div class="w3-row">
+                        <div class="w3-half" style="padding: 10px; text-align: center">
+                            <div class="w3-container w3-card-4 w3-padding-16 w3-white">
+                              <!-- width="854" height="480" -->
+                              <iframe  height="300vmin" width="450vmin" src="https://www.youtube.com/embed/zdYRRCxnEDY" frameborder="0" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                        <div class="w3-half" style="padding: 10px; text-align: center">
+                            <div class="w3-container w3-card-4 w3-padding-16 w3-white">
+                                <iframe height="300vmin" width="450vmin" src="https://www.youtube.com/embed/zWdun9j_5PE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Contact Container -->
                 <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
                     <div class="w3-row">
@@ -436,7 +466,7 @@ body#video-holder {
                         <!-- Side image -->
                         <div class="w3-col m7">
                             <div class="w3-container w3-card-4 w3-padding-16 w3-white">
-                                <img src="images/goalie2.jpg" alt="goalie2" style="width:100%;min-height:350px;max-height:600px;">
+                                <img src="images/areyouready.jpg" alt="areyouready" style="width:100%;min-height:300px;max-height:600px;">
                             </div>
                         </div>
                     </div>
@@ -508,9 +538,11 @@ function constructEmailRef()
                 </script>
                 -->
 
+                <!-- 
                 <div id="map" >
                   <img src="images/renonvmap.png" alt="Reno, NV" style="width: 100%; height:450px; overflow: hidden">
                 </div>
+                -->
 
                 <!-- Footer -->
                 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
@@ -548,15 +580,20 @@ function constructEmailRef()
                 </script>
             </div>  <!-- End #page_wrap -->
 
+             <!--
              <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
             </div>
-
+            -->
 
         </div>
     </div>
+    
+    <!--
     <script src="dist/js/rAF.js"></script>
     <script src="dist/js/demo-2.js"></script>
+    -->
+
 </body>
 
 </html>
