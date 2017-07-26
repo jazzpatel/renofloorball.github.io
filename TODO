@@ -1,3 +1,18 @@
-Need to ensure the www/ folder is part of the grunt build process
-Create template html file wit <section>
+* /dist should be the final build for both the server and packaged front-end
+
+* Need to ensure the www/ folder is part of the grunt build process
+
+* Create template html file with <section>
+
+* Merge the react-app with the bower app
+
+* Would like to place react [app] code in the a src/app folder
+
+* Convert to using jspm with ES6 and Typescript  
+	This will presumably also allow jspm publish to create the /dist folder
+
+* Convert CSS to use vmin, vmax
+
+
+* Combine the JS modules for JSPM to use React components
 
