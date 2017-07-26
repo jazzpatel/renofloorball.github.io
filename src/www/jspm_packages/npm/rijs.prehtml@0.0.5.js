@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.prehtml@0.0.5/dist");

@@ -1,0 +1,1 @@
+module.exports = require("npm:deep-eql@2.0.2/index");

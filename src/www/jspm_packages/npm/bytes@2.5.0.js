@@ -1,0 +1,1 @@
+module.exports = require("npm:bytes@2.5.0/index");

@@ -1,0 +1,1 @@
+module.exports = require("npm:estree-walker@0.2.1/dist/estree-walker.umd.js");

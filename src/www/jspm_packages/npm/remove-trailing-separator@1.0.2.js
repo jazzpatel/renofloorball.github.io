@@ -1,0 +1,1 @@
+module.exports = require("npm:remove-trailing-separator@1.0.2/index.js");

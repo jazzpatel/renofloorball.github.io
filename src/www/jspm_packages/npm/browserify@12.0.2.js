@@ -1,0 +1,1 @@
+module.exports = require("npm:browserify@12.0.2/index.js");

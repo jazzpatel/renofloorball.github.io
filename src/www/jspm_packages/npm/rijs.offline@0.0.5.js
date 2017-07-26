@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.offline@0.0.5/dist");

@@ -1,0 +1,1 @@
+module.exports = require("npm:type-detect@4.0.3/index.js");

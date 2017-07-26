@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.shadow@0.0.8/dist");

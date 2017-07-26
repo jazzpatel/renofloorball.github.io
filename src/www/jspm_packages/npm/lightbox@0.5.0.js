@@ -1,0 +1,1 @@
+module.exports = require("npm:lightbox@0.5.0/assets/scripts/main.js");

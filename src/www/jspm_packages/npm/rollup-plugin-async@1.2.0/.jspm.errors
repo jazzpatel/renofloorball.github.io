@@ -1,0 +1,16 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:1:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:1:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:1:25: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:4:7: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:5:7: Unexpected token await
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:5:14: Unexpected reserved word let
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:5:38: Unexpected token {
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:7:3: Unexpected token }
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:8:3: Unexpected token return
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:8:16: Unexpected token mystery
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source.js:8:23: Unexpected token )
+
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source2.js:1:1: Unexpected reserved word export
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source2.js:1:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source2.js:1:14: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rollup-plugin-async@1.2.0/test/source2.js:2:16: Semi-colon expected

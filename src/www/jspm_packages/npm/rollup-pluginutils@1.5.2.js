@@ -1,0 +1,1 @@
+module.exports = require("npm:rollup-pluginutils@1.5.2/dist/pluginutils.cjs.js");

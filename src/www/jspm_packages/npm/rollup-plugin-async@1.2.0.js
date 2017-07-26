@@ -1,0 +1,1 @@
+module.exports = require("npm:rollup-plugin-async@1.2.0/index.js");

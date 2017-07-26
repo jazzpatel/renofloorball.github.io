@@ -1,0 +1,6 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/bootstrap-material-design@0.5.10/bower_components/jquery/src/intro.js:45:1: Unexpected token End of File
+/Users/jazzpatel/.jspm/packages/npm/bootstrap-material-design@0.5.10/bower_components/jquery/src/intro.js:45:1: Unexpected token End of File
+/Users/jazzpatel/.jspm/packages/npm/bootstrap-material-design@0.5.10/bower_components/jquery/src/intro.js:45:1: Unexpected token End of File
+
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/bootstrap-material-design@0.5.10/bower_components/jquery/src/outro.js:1:1: Illegal return statement
+/Users/jazzpatel/.jspm/packages/npm/bootstrap-material-design@0.5.10/bower_components/jquery/src/outro.js:2:1: Unexpected token }

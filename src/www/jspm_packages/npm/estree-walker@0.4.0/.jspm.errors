@@ -1,0 +1,5 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/estree-walker@0.4.0/dist/estree-walker.es.js:54:1: Unexpected reserved word export
+/Users/jazzpatel/.jspm/packages/npm/estree-walker@0.4.0/dist/estree-walker.es.js:54:8: Semi-colon expected
+
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/estree-walker@0.4.0/src/estree-walker.js:1:1: Unexpected reserved word export
+/Users/jazzpatel/.jspm/packages/npm/estree-walker@0.4.0/src/estree-walker.js:1:8: Semi-colon expected

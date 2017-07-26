@@ -1,0 +1,8 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:4:1: Unexpected reserved word export
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:4:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:4:8: Unexpected reserved word default
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:4:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:10:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:10:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:10:14: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.singleton@0.0.4/src/index.js:10:19: Semi-colon expected

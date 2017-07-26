@@ -1,0 +1,1 @@
+module.exports = require("npm:archiver@1.3.0/index.js");

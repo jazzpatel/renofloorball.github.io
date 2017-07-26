@@ -1,0 +1,1 @@
+module.exports = require("npm:icon-windows@0.0.1/index.js");

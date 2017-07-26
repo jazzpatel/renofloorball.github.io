@@ -1,0 +1,1 @@
+module.exports = require("npm:icon-ie@0.0.1/index.js");

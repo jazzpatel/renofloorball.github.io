@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.delay@0.0.6/dist");

@@ -1,0 +1,1 @@
+module.exports = require("npm:get-func-name@2.0.0/index.js");

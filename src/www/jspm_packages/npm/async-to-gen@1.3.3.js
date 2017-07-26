@@ -1,0 +1,1 @@
+module.exports = require("npm:async-to-gen@1.3.3/index.js");

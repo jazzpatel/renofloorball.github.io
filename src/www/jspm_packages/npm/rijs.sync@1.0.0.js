@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.sync@1.0.0/dist");

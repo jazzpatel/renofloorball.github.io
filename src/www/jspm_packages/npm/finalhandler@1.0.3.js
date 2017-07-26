@@ -1,0 +1,1 @@
+module.exports = require("npm:finalhandler@1.0.3/index");

@@ -1,0 +1,34 @@
+/* */ 
+(function(process) {
+  var username = process.env.SAUCE_USERNAME || "SAUCE_USERNAME";
+  var accessKey = process.env.SAUCE_ACCESS_KEY || "SAUCE_ACCESS_KEY";
+  require('colors');
+  var chai = require('chai');
+  var chaiAsPromised = require('chai-as-promised');
+  chai.use(chaiAsPromised);
+  chai.should();
+  var wd;
+  try {
+    wd = require('../../lib/main');
+  } catch (err) {
+    wd = require('../../lib/main');
+  }
+  chaiAsPromised.transferPromiseness = wd.transferPromiseness;
+  var browser = wd.promiseChainRemote("ondemand.saucelabs.com", 80, username, accessKey);
+  browser.on('status', function(info) {
+    console.log(info.cyan);
+  });
+  browser.on('command', function(eventType, command, response) {
+    console.log(' > ' + eventType.cyan, command, (response || '').grey);
+  });
+  browser.on('http', function(meth, path, data) {
+    console.log(' > ' + meth.magenta, path, (data || '').grey);
+  });
+  var desired = {
+    platform: 'LINUX',
+    name: "example test"
+  };
+  browser.init(desired).sauceJobUpdate({tags: ['example']}).get("http://admc.io/wd/test-pages/guinea-pig.html").title().should.become('WD Tests').elementById('i am a link').click().eval("window.location.href").should.eventually.include('guinea-pig2').fin(function() {
+    return browser.quit();
+  }).sauceJobStatus(true).done();
+})(require('process'));

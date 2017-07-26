@@ -1,0 +1,1 @@
+module.exports = require("npm:zip-stream@1.2.0/index.js");

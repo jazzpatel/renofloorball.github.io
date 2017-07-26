@@ -1,0 +1,1 @@
+module.exports = require("npm:compress-commons@1.2.0/lib/compress-commons.js");

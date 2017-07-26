@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.reactive@0.0.6/dist");

@@ -1,0 +1,102 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:25: Unexpected token =>
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:28: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:30: Unexpected token ,
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:32: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:56: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:296:56: Unexpected token )
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:31: Unexpected token =>
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:34: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:36: Unexpected token ,
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:38: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:56: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:300:56: Unexpected token )
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:304:37: Unexpected token =>
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:304:40: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:304:42: Unexpected token ,
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:304:56: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:304:56: Unexpected token )
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:728:18: Unexpected token d
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:728:20: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:728:20: Unexpected token =>
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:728:23: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:730:11: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:736:11: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:742:11: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:750:4: Unexpected token )
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/test.js:785:7: Semi-colon expected
+
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:4:1: Unexpected reserved word export
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:4:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:4:8: Unexpected reserved word default
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:4:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:190:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:190:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:190:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:190:21: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:191:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:191:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:191:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:191:22: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:192:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:192:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:192:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:192:21: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:193:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:193:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:193:15: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:193:20: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:194:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:194:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:194:15: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:194:20: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:195:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:195:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:195:15: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:195:20: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:196:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:196:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:196:15: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:196:20: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:197:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:197:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:197:14: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:197:19: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:198:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:198:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:198:13: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:198:18: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:199:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:199:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:199:13: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:199:18: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:200:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:200:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:200:12: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:200:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:201:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:201:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:201:12: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:201:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:202:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:202:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:202:12: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:202:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:203:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:203:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:203:12: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:203:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:204:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:204:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:204:12: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:204:17: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:205:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:205:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:205:11: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:205:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:206:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:206:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:206:11: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:206:16: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:207:1: Unexpected reserved word import
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:207:8: Semi-colon expected
+/Users/jazzpatel/.jspm/packages/npm/rijs.sync@1.0.0/src/index.js:207:21: Semi-colon expected

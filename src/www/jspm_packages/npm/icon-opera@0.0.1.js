@@ -1,0 +1,1 @@
+module.exports = require("npm:icon-opera@0.0.1/index.js");

@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.backpressure@1.0.1/dist");

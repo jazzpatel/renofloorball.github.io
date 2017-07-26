@@ -1,0 +1,7 @@
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/error_code/src.js:2:5: Unexpected token var
+/Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/error_code/src.js:2:7: Unexpected token =
+/Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/error_code/src.js:2:9: Semi-colon expected
+
+MultipleErrors: /Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/syntax_cache/invalid.js:2:5: Unexpected token var
+/Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/syntax_cache/invalid.js:2:7: Unexpected token =
+/Users/jazzpatel/.jspm/packages/npm/browserify@12.0.2/test/syntax_cache/invalid.js:2:9: Semi-colon expected

@@ -1,0 +1,1 @@
+module.exports = require("npm:rijs.needs@0.0.6/dist");

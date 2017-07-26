@@ -1,0 +1,1 @@
+module.exports = require("npm:platform@1.3.4/platform.js");

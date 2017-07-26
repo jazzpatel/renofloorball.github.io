@@ -1,0 +1,1 @@
+module.exports = require("npm:crc@3.4.4/lib/index.js");
