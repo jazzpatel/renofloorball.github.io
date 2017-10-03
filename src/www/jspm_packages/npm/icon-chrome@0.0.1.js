@@ -1,1 +1,0 @@
-module.exports = require("npm:icon-chrome@0.0.1/index.js");

@@ -1,1 +1,0 @@
-module.exports = require("npm:kind-of@4.0.0/index.js");

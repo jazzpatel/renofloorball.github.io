@@ -1,1 +1,0 @@
-module.exports = require("npm:wd@1.4.0/lib/main");

@@ -1,1 +1,0 @@
-module.exports = require("npm:random-bytes@1.0.0/index");

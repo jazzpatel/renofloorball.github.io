@@ -1,6 +1,9 @@
-/* Preload images */
-body:after {
-  content: url(close.png) url(loading.gif) url(prev.png) url(next.png);
+body:after 
+{
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAPFBMVEX///8AAAD9/f2CgoKAgIAAAAAAAAAAAABLS0sAAAAAAACqqqqqqqq6urpKSkpISEgAAAC7u7u5ubn////zbsMcAAAAE3RSTlMASv6rqwAWS5YMC7/AyZWVFcrJCYaKfAAAAHhJREFUeF590kkOgCAQRFEaFVGc+/53FYmbz6JqBbyQMFSYuoQuV+iTflnstI7ssLXRvMWRaEMs84e2uVckuZe6knL0hiSPObXhj6ChzoEkIolIIpKIO4joICAIeDd7QGIfCCjOKe9HEk8mnxpIAup/F31RPZP9fAG3IAyBSJe0igAAAABJRU5ErkJggg==') 
+           url('./loading.gif') 
+           url('./prev.png') 
+           url('./next.png');
   display: none;
 }
 
@@ -79,7 +82,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(loading.gif) no-repeat;
+  background: url('./loading.gif') no-repeat;
 }
 
 .lb-nav {
@@ -110,7 +113,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(prev.png) left 48% no-repeat;
+  background: url('./prev.png') left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -128,7 +131,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(next.png) right 48% no-repeat;
+  background: url('./next.png') right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -192,7 +195,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(close.png) top right no-repeat;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAPFBMVEX///8AAAD9/f2CgoKAgIAAAAAAAAAAAABLS0sAAAAAAACqqqqqqqq6urpKSkpISEgAAAC7u7u5ubn////zbsMcAAAAE3RSTlMASv6rqwAWS5YMC7/AyZWVFcrJCYaKfAAAAHhJREFUeF590kkOgCAQRFEaFVGc+/53FYmbz6JqBbyQMFSYuoQuV+iTflnstI7ssLXRvMWRaEMs84e2uVckuZe6knL0hiSPObXhj6ChzoEkIolIIpKIO4joICAIeDd7QGIfCCjOKe9HEk8mnxpIAup/F31RPZP9fAG3IAyBSJe0igAAAABJRU5ErkJggg==') top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);

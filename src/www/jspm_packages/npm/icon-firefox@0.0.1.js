@@ -1,1 +1,0 @@
-module.exports = require("npm:icon-firefox@0.0.1/index.js");

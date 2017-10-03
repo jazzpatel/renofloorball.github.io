@@ -1,1 +1,0 @@
-module.exports = require("npm:lock@0.1.4/index");

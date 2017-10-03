@@ -1,1 +1,0 @@
-module.exports = require("npm:magic-string@0.19.1/dist/magic-string.cjs.js");

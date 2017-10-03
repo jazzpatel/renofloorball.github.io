@@ -1,1 +1,0 @@
-module.exports = require("npm:vargs@0.1.0/lib/vargs");

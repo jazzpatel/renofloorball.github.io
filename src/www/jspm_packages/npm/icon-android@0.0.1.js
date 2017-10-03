@@ -1,1 +1,0 @@
-module.exports = require("npm:icon-android@0.0.1/index.js");

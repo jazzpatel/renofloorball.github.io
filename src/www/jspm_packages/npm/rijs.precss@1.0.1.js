@@ -1,1 +1,0 @@
-module.exports = require("npm:rijs.precss@1.0.1/dist");

@@ -1,1 +1,0 @@
-module.exports = require("npm:bootstrap-material-design@0.5.10/scripts/index.js");

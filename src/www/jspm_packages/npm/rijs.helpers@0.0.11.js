@@ -1,1 +1,0 @@
-module.exports = require("npm:rijs.helpers@0.0.11/dist");

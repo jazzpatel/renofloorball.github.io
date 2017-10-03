@@ -1,1 +1,0 @@
-module.exports = require("npm:js-yaml@3.9.0/index");

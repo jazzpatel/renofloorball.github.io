@@ -1,1 +1,0 @@
-module.exports = require("npm:cssscope@0.1.0/index.js");

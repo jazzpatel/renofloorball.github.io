@@ -1,1 +1,0 @@
-module.exports = require("npm:rijs.data@2.0.0/dist");

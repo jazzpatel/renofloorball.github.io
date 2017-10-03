@@ -1,0 +1,8 @@
+Pick game type _> generate fiedl
+position players and props
+	rotate players 
+draw player movement (select type of momvement) in 2D (top view)
+place coordinated time markers
+	(path gets highlighted)
+run simulation 
+	record simulation

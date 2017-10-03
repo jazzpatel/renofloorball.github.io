@@ -1,1 +1,0 @@
-module.exports = require("npm:tar-pack@3.4.0/index");

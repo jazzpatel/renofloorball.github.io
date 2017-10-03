@@ -1,1 +1,0 @@
-module.exports = require("npm:fresh@0.5.0/index");

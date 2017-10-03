@@ -1,1 +1,0 @@
-module.exports = require("npm:lazystream@1.0.0/lib/lazystream.js");

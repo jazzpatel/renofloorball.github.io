@@ -1,1 +1,0 @@
-module.exports = require("npm:etag@1.8.0/index");

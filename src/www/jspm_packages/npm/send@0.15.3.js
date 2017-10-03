@@ -1,1 +1,0 @@
-module.exports = require("npm:send@0.15.3/index");

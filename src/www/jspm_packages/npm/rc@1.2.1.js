@@ -1,1 +1,0 @@
-module.exports = require("npm:rc@1.2.1/browser.js");

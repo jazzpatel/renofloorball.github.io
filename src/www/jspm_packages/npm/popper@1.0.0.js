@@ -1,1 +1,0 @@
-module.exports = require("npm:popper@1.0.0/dist/index.js");

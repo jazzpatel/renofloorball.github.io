@@ -1,1 +1,0 @@
-module.exports = require("npm:jsonparse@1.3.1/jsonparse.js");

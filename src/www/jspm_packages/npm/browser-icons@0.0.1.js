@@ -1,1 +1,0 @@
-module.exports = require("npm:browser-icons@0.0.1/index.js");

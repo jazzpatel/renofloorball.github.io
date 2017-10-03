@@ -1,1 +1,0 @@
-module.exports = require("npm:icon-ios@0.0.1/index.js");

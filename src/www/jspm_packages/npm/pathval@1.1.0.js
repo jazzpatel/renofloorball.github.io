@@ -1,1 +1,0 @@
-module.exports = require("npm:pathval@1.1.0/index.js");

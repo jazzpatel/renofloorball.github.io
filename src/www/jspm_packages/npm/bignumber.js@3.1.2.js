@@ -1,1 +1,0 @@
-module.exports = require("npm:bignumber.js@3.1.2/bignumber.js");

@@ -1,1 +1,0 @@
-module.exports = require("npm:check-error@1.0.2/index.js");

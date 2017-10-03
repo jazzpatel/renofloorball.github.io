@@ -1,1 +1,0 @@
-module.exports = require("npm:vlq@0.2.2/dist/vlq.js");

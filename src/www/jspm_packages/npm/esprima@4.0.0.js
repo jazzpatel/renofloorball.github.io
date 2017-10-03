@@ -1,1 +1,0 @@
-module.exports = require("npm:esprima@4.0.0/dist/esprima.js");

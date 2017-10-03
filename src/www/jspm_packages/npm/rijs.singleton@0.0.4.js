@@ -1,1 +1,0 @@
-module.exports = require("npm:rijs.singleton@0.0.4/dist");
