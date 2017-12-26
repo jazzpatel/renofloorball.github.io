@@ -8,11 +8,19 @@
 
 * Would like to place react [app] code in the a src/app folder
 
-* Convert to using jspm with ES6 and Typescript  
-	This will presumably also allow jspm publish to create the /dist folder
-
 * Convert CSS to use vmin, vmax
 
-
 * Combine the JS modules for JSPM to use React components
+
+
+* Other libraries to consider
+
+animate.css
+react-permission
+material-ui
+snap.svg
+
+
+* Automate testing with Jasmine
+
 

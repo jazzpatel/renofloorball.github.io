@@ -14,6 +14,7 @@ var locals = {
   ]
 }
 
+var debug = process.env.NODE_ENV !== 'production'
 
 const config = {
     //Declarations
@@ -21,7 +22,7 @@ const config = {
     context: path.resolve('src/www'),
     entry: {
       lightbox: [ './components/lightbox/lightbox.min.js' ],
-      main: ['./components/main.js']
+      main: ['./components/main.js', './styles/private.css']
     },
     output: { 
       path: path.resolve(__dirname,'./dist'),
@@ -50,13 +51,16 @@ const config = {
             },
 
             { 
-              test: /\.js$/,
-              loader: 'babel-loader',
+              test: /\.(js|jsx)$/,
+              //loader: ['babel-loader'],
+              //loader: ['react-hot-loader/webpack', 'babel-loader'],
+              //loaders: ['babel-loader?presets[]=es2015,presets[]=stage-0,presets[]=react,plugins[]=transform-runtime'],
+              loaders: ['babel-loader?presets[]=es2015,presets[]=stage-0,presets[]=react'],
               exclude: /node_modules/,
-              query: {
-                cacheDirectory: true,
-                presets: [ 'es2015', 'stage-0'],
-              }
+              // query: {
+              //   cacheDirectory: true,
+              //   presets: [  'es2015', 'react-hot','stage-0'],
+              // }
             },
 
             {
@@ -87,7 +91,16 @@ const config = {
             jquery: 'jquery',
             jQuery: 'jquery',
         }),
-        new webpack.optimize.UglifyJsPlugin(),
+        
+        //ENABLE THIS FOR FINAL PRODUCTION BUILD
+        // new webpack.optimize.UglifyJsPlugin( {
+        //   uglifyOptions: {
+        //     compress: {
+        //       drop_console: debug,
+        //     }
+        //   }
+        // }),
+        
         //new ExtractTextPlugin({ filename: 'mainWebpack.css', disable: false, allChunks: true }),
         //new ExtractTextPlugin('[name].[hash].css'),
 
@@ -111,7 +124,7 @@ const config = {
             
             // Copy directory contents to {output}/
             { from: 'favicon.ico' },
-            //{ from: 'js/jquery-min.js' },
+            { from: 'components/protected/a.inc' },
             //{ from: 'deprecated', to: 'deprecated'},
             { from: 'assets/images/img', to: 'images/img'},
             { from: 'assets/images/team', to: 'images/team'},
