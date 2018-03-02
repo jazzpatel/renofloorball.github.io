@@ -6,6 +6,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
+const ExtendedDefinePlugin = require('extended-define-webpack-plugin');
+var appConfig = require('./app.config.js');
 
 //var data = require('src/www/routes/routes.js');
 var locals = {
@@ -21,8 +23,9 @@ const config = {
     watch: true,
     context: path.resolve('src/www'),
     entry: {
-      lightbox: [ './components/lightbox/lightbox.min.js' ],
-      main: ['./components/main.js', './styles/private.css']
+      lightbox: [ './ext/lightbox/lightbox.min.js' ],
+      log4javascript: [ './ext/log4javascript-1.4.13/log4javascript_uncompressed.js'],
+      main: ['./components/main.js']
     },
     output: { 
       path: path.resolve(__dirname,'./dist'),
@@ -67,7 +70,8 @@ const config = {
               test: /(\.scss|\.css)$/,
               //include: [ path.resolve(__dirname, 'src/css'), path.resolve(__dirname,'src/extras'), path.resolve(__dirname,'src/components') ],
               loader: ExtractTextPlugin.extract( { loader: 'css-loader', query: { modules: true, localIdentName: '[local]', importLoaders: true, /* minimize: true */ } }), //  'css!postcss!sass'),
-
+              
+              //loader: ExtractTextPlugin.extract( "style-loader", "css-loader")
             },
               
 
@@ -92,6 +96,18 @@ const config = {
             jQuery: 'jquery',
         }),
         
+        new ExtendedDefinePlugin({
+          APP_CONFIG: appConfig
+        }),
+
+        // new webpack.NormalModuleReplacementPlugin(
+        //   /(.*)-APP_TARGET(\.*)/,
+        //   function(resource){
+        //     resource.request = resource.request
+        //       .replace(/-APP_TARGET/, `-${appTarget}`);
+        //   }
+        // )
+
         //ENABLE THIS FOR FINAL PRODUCTION BUILD
         // new webpack.optimize.UglifyJsPlugin( {
         //   uglifyOptions: {
@@ -111,7 +127,7 @@ const config = {
               filename: 'index.html'
         }),
         //new HtmlWebpackPlugin({ template: 'mainOrig.html' }),
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('[name].css', { allChunks: true }),
 
        
 
@@ -124,7 +140,7 @@ const config = {
             
             // Copy directory contents to {output}/
             { from: 'favicon.ico' },
-            { from: 'components/protected/a.inc' },
+            { from: 'components/portal/a.inc' },
             //{ from: 'deprecated', to: 'deprecated'},
             { from: 'assets/images/img', to: 'images/img'},
             { from: 'assets/images/team', to: 'images/team'},

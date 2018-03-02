@@ -2,9 +2,15 @@
 # renofloorball.github.io
 #
 
+
+Original GoDaddy A record points to: 184.168.221.61
+
+
 # Cloudfare settings
 184.168.221.23
 https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/
+#How to
+https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b
 
 #Player stat card
 Photo (perhaps oversized)

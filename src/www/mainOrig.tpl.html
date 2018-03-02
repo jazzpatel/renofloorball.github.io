@@ -31,16 +31,98 @@
     <link rel="stylesheet" type="text/css" href="components/materialize/dist/css/materialize.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     -->
+
+    <script type="text/javascript" src="./log4javascript.js">
+        var log = log4javascript.getDefaultLogger();
+        console.log('log: ',log)
+        log.info('Initializing log4javascript...')
+     </script>
+     
 </head>
 
 <body id="mainbody" data-spy="scroll" data-offset="20" data-target="#navbar">
     <div id="error-root"></div>
     <div id="modal-root"></div>
     <div id="react-root"></div>
-   
+    
+    <!--
+   <div id="myDIV">
+          <div id="content" class="container"><div class="row"><div class="col-md-12"><blockquote style="border-left: none;"><p style="font-size: 8.5vmin; color: rgba(255, 255, 255, 0.8); text-align: center; text-transform: uppercase; text-shadow: blue 0px 0px 10px;">You miss 100 percent of the shots you don’t take</p></blockquote></div><a href="/accounthomepage">Test accounthomepage</a><a href="/accounthomepage">Test Protected Link</a></div></div>
+    </div>
+  -->
+
 </body>
+
+
+
+<style>
+#myDIV {
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+}
+
+#content {
+    height: 800px;
+    width: 2000px;
+    background-color: coral;
+}
+</style>
+
+
+<script>
+function myFunction() {
+    var elmnt = document.getElementById("myDIV");
+    elmnt.scrollLeft += 50;
+    elmnt.scrollTop += 10;
+}
+</script>
+
+<script>
+
+function navSlide(event) {
+  // var scroll_top = $(window).scrollTop();
+
+  // if (scroll_top >= offset_val) { // the detection!
+  //   $nav_header.addClass('is-sticky');
+  // } else {
+  //   $nav_header.removeClass('is-sticky');
+  // }
+
+  console.log('document.body.scrollTop: ',document.body.scrollTop)
+  console.log('document.documentElement.scrollTop: ',document.documentElement.scrollTop)
+  console.log('document.documentElement.scrollHeight: ',document.documentElement.scrollHeight)
+  console.log('document.documentElement.clientHeight: ',document.documentElement.clientHeight)
+  console.log('window.scrollX: ',window.scrollX)
+  console.log('window.scrollY: ',window.scrollY)
+  console.log('window.scrollTop: ',window.scrollTop)
+  console.log('event: ',event)
+  
+  var elmnt = document.getElementById("back");
+  console.log('elmnt: ',elmnt)
+  elmnt.scrollTop = 100
+  console.log('elemnt.scrollTop: ',elmnt.scrollTop)
+  console.log('elemnt.scrollY: ', elmnt.scrollY)
+  console.log('elemnt.scrollheight: ', elmnt.scrollHeight)
+  console.log('----')
+}
+
+//$(window).scroll(navSlide);
+
+// window.setInterval( function() { 
+    
+//      var elmnt = document.getElementById("carddeck1");
+//      elmnt.scrollTop += 1
+//      console.log('elmnt: ', elmnt, ', scrollTop:',elmnt.scrollTop, ', scrollY: ',elmnt.scrollY, ', scrollHeight: ', elmnt.scrollHeight)
+// },1000)
+
+</script>
 
  
   <!--  <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
     -->
+
+     
+
+
 </html>

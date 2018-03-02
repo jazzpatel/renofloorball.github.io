@@ -1,24 +1,31 @@
-/** Bootstrap the application. This module constructs the application object, redux store and the provider **/
-
+/**
+ * Application bootstrap module
+ *
+ */
 
 //Note. In order for jQuery to be scoped correctly it needs to be attached to the window object
 window.jQuery = window.$ = require('jquery/dist/jquery.min')
 
+
+/** All the usual imports */
 import bootstrap from 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bootstrapmaterial from 'bootstrap-material-design/dist/js/bootstrap-material-design';
 import 'bootstrap-material-design/dist/css/bootstrap-material-design.min.css';
 
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux';
+import configureStore from '../redux/stores/configureStore';
+import App from './App'
+
+//Styling and Themes
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import {
   version,
 } from '../../../package.json'
 
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux';
-import configureStore from '../stores/configureStore';
-import App from './App'
 
 
 //Customize the console log 
@@ -33,9 +40,7 @@ console.important = function(msg) {
 }
 console.todo('Testing a todo')
 console.important('Testing important')
-
 console.log("%cHi from dnldr", "font-size: 100px;" )
-
 
 Object.defineProperty(window, "console", {
     value: console,
@@ -77,6 +82,11 @@ render(
     </Provider>,
     rootEl
 )
+
+
+
+
+// Extra sample code for future reference
 
 // let render = () => {
 //   const Root = require('./App').default
