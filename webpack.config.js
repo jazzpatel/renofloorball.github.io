@@ -16,18 +16,26 @@ var locals = {
   ]
 }
 
-var debug = process.env.NODE_ENV !== 'production'
+var debug = (process.env.NODE_ENV !== 'production' ? true : false )
+
+var output = undefined   
+
+var context_entry = (typeof output === 'undefined' ? 'src/www/public' : 'src/www' )
+var PUBLIC = ( context_entry === 'src/www/public' ? true : false )
+
+console.log('context_entry: ',context_entry)
+console.log('PUBLIC: ',PUBLIC)
 
 const config = {
     //Declarations
     watch: true,
-    context: path.resolve('src/www'),
+    context: path.resolve(context_entry),
     entry: {
       lightbox: [ './ext/lightbox/lightbox.min.js' ],
       log4javascript: [ './ext/log4javascript-1.4.13/log4javascript_uncompressed.js'],
-      main: ['./components/main.js']
+      main: ['./main.js']
     },
-    output: { 
+    output: {
       path: path.resolve(__dirname,'./dist'),
       //publicPath: 'http://mycdn.com',
       filename: '[name].js'
@@ -47,13 +55,28 @@ const config = {
 
             { test: /bootstrap\/dist\/js\/\//, loader: 'file-loader?imports?jQuery=jquery' },
 
+            { test: /\.jsx?$/,
+              enforce: "pre",
+              loader: "eslint-loader",
+              exclude: /node_modules/,
+              options: {
+                emitWarning: true,
+                configFile: "./.eslintrc.json"
+                }
+            },
+
             {
                 test: /\.html$/,
                 exclude: /node_modules/,
-                use: {loader: 'html-loader'}
+                use: {
+                    loader: 'html-loader',
+                      options: {
+                        interpolate: true
+                    }
+                }
             },
 
-            { 
+            {
               test: /\.(js|jsx)$/,
               //loader: ['babel-loader'],
               //loader: ['react-hot-loader/webpack', 'babel-loader'],
@@ -70,10 +93,10 @@ const config = {
               test: /(\.scss|\.css)$/,
               //include: [ path.resolve(__dirname, 'src/css'), path.resolve(__dirname,'src/extras'), path.resolve(__dirname,'src/components') ],
               loader: ExtractTextPlugin.extract( { loader: 'css-loader', query: { modules: true, localIdentName: '[local]', importLoaders: true, /* minimize: true */ } }), //  'css!postcss!sass'),
-              
+
               //loader: ExtractTextPlugin.extract( "style-loader", "css-loader")
             },
-              
+
 
 
             // {
@@ -86,18 +109,20 @@ const config = {
             //     loader: ExtractTextPlugin.extract('css-loader', 'css sourceMap&modules&importLoaders=1&localIdentName=[local]!postcss!sass')
             // },
 
-            
+
         ]
     },
     plugins: [
-        new webpack.ProvidePlugin({   
+        new webpack.ProvidePlugin({
             $: 'jquery',
             jquery: 'jquery',
             jQuery: 'jquery',
         }),
-        
+
         new ExtendedDefinePlugin({
-          APP_CONFIG: appConfig
+          APP_CONFIG: appConfig,
+          PUBLIC: PUBLIC,
+          DEBUG: debug
         }),
 
         // new webpack.NormalModuleReplacementPlugin(
@@ -116,7 +141,7 @@ const config = {
         //     }
         //   }
         // }),
-        
+
         //new ExtractTextPlugin({ filename: 'mainWebpack.css', disable: false, allChunks: true }),
         //new ExtractTextPlugin('[name].[hash].css'),
 
@@ -129,7 +154,7 @@ const config = {
         //new HtmlWebpackPlugin({ template: 'mainOrig.html' }),
         new ExtractTextPlugin('[name].css', { allChunks: true }),
 
-       
+
 
         // OccurenceOrderPlugin is needed for webpack 1.x only
         //new webpack.optimize.OccurenceOrderPlugin(),
@@ -137,26 +162,28 @@ const config = {
         //new webpack.NoEmitOnErrorsPlugin()
 
         new CopyWebpackPlugin([
-            
+
             // Copy directory contents to {output}/
             { from: 'favicon.ico' },
             { from: 'components/portal/a.inc' },
             //{ from: 'deprecated', to: 'deprecated'},
             { from: 'assets/images/img', to: 'images/img'},
+            { from: 'assets/sound', to: 'sound'},
             { from: 'assets/images/team', to: 'images/team'},
             { from: 'assets/videos', to: 'videos'},
+            { from: 'assets/svg', to: 'svg'},
             { from: 'fonts', to: 'fonts'},
-            
+
             // Copy directory contents to {output}/to/directory/
             //{ from: 'from/directory', to: 'to/directory' },
-            
+
             // Copy glob results to /absolute/path/
             //{ from: 'from/directory/**/*', to: '/absolute/path' },
         ], {
             ignore: [
-                // Doesn't copy any files with a txt extension    
+                // Doesn't copy any files with a txt extension
                 '*.txt',
-                
+
                 // Doesn't copy any file, even if they start with a dot
                 //'**/*',
 
@@ -169,7 +196,7 @@ const config = {
             // to `true` copies all files.
             copyUnmodified: true
         }),
-    
+
         // Make sure that the plugin is after any plugins that add images
         new ImageminPlugin({
           //disable: process.env.NODE_ENV !== 'production', // Disable during development
@@ -182,4 +209,13 @@ const config = {
     ]
 };
 
+config.plugins.push(function(){
+    this.plugin('done', function(stats) {
+        console.log(('\n[' + new Date().toLocaleString() + ']') + ' Begin a new compilation.\n');
+    });
+});
+
+
 module.exports = config;
+
+
