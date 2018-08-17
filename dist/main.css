@@ -316,6 +316,13 @@ div[id~=motivation] blockquote {
   animation: dash 3s linear alternate infinite;
 }
 
+.cls-2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation: dashDark 3s linear alternate infinite;
+}
+
 @keyframes dash {
   from {
     stroke-dashoffset: 1000;
@@ -330,6 +337,24 @@ div[id~=motivation] blockquote {
     fill: none;
     stroke-width: 3px;
     stroke: white;
+  }
+}
+
+
+@keyframes dashDark {
+  from {
+    stroke-dashoffset: 1000;
+    /*opacity: 0;*/
+    fill: none;
+    stroke-width: 0px;
+    stroke: red;
+  }
+  to {
+    stroke-dashoffset: 0;
+    /*opacity: 1;*/
+    fill: none;
+    stroke-width: 3px;
+    stroke: black;
   }
 }
 
@@ -1057,7 +1082,7 @@ section.module.parallax h1 {
 
 
 section.module.parallax-1 {
-    background-image: url(./images/StockSnap_9HGW75ZPQC.jpg);
+    background-image: url(./images/Reno-Skyline2_1200x540.jpg);
     background-size: cover;
 
 }
