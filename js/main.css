@@ -66,6 +66,7 @@ nav.navbar.shrink {
 }
 
 
+
 .navbar li {
     color: #000000;
 
@@ -117,6 +118,13 @@ nav.navbar.shrink {
 .navbar a {
     color: inherit;
     display: inline-block;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+.navbar a.shrinkHeader {
+    height: 35px;
+    font-size: 1.5rem;
 }
 
 .navbar .nav-item {
@@ -148,6 +156,30 @@ nav.navbar.shrink {
     margin: 1em;
     z-index: 10;
 }
+
+
+section a {
+    margin: 0 auto;
+    font-size: 2.0rem;
+    padding: 1.25rem 2.5rem;
+    display: block;
+    background-color: #009ac9;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section a:hover {
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #009ac9;
+  }
+
 
 @media print, screen and (min-width: 40em) {
     .nav__logo {
@@ -885,11 +917,7 @@ a:hover {
 
 
 
-.img-macbook { content: url(./../assets/images/macbook.png)  }
-.img-responsive { content: url(./../assets/images/responsive.png)  }
-.img-bs3 { content: url(./../assets/images/bs3.png)  }
-.img-free { content: url(./../assets/images/free.png) }
-.img-graph { content: url(./../assets/images/graph.png) }
+
 
 .img-areyouready { content: url(./../assets/images/areyouready.jpg) }
 
@@ -903,7 +931,7 @@ a:hover {
 .img-goalie2 { content: url(./../assets/images/goalie2.jpg) }
 .img-goalfloorball { content: url(./../assets/images/goalfloorball.jpg) }
 img-floorballaeropro_white { content: url(./../assets/images/floorballaeropro_white.jpg); width: 30px; height: 30px;}
-.three50by150 { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAACWBAMAAABkyf1EAAAAG1BMVEXMzMyWlpbFxcWqqqqcnJyxsbG3t7e+vr6jo6OVuynYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADG0lEQVR4nO2YzW/aQBDFF2PjHBkwCUfTSOEKUaRecRpFPeKqX0eo1KZHnFx6xFWV/tud2V3DsiJEPdi+vN/BC/aL9mV2PDuLUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP/jMkuueYhIWPCn4CZ5+4I2Jj3kIk1OS+tC+1wq1d35LXhcvSTWw7zye0JaF2uZe6TUWeU3lvH8uDg0fkvr95S0LrLk8SqjVIXjH8xGPP2dlkl6VJwbv9kzSx9OS2uiR1uZd6k6VZzWiQR7eUQb/CLjt8qBl6W10aWNrOtWTS7snZI/BDqRfTIyfgP5m9PS2tAZKXMWA3uH+uJkcERL1m/M6fOKtDY6uixxfNd9cyOmGV9zkx0TWflIUkb4c5dpvz06Im2I3oOdOF+YG5FOzmJovyzE9KZSm/oQJUekTXLGE8+3X5NnZRNaTcb6QZBxpZvvDRm/3XFUvl950gaZljxlecfZeSvexUTHhnBNaUD7BDV+zxJ+87iMHUobg3er3+blNyZSx0RIM7dgGb+h3lpuPWmTfq/l5f8wnXMeGxPh7pUaFI4fc7tDozdPNPSkTfrluMqq9/hShdA+LIel8/5XflOdKZ60MTiuC/VJcrEc+UGbkLsf2PrwRel9raX4yqrbGBZjPym5bdvshY433hNbyl8mtyWL5/Ze+oDccuXGkhYt1Qel41r58Ypqj9z+y/Wb9duovx/v5bovX/6mFZLbfx36bWN/W4/kOhn3Pusx0b2a0xTkibNdWL/fV0r3SJ60EUx0iqF5d+TbQdMV0EXpxM/41Q+l52ijP9M+y3OztlJrD5raLs2cdsf61RGVnqOF/rcr6RnRIJZlj+RycGiYUNqt2smd30L+x5wvLZwvYho+XpU8Z5Z8i+cytz6UVR05J0PgnCirHe0+fZIz6oG0IfTZfGyO5rrWuodeHfV8X2BDe74Qtu2cj/U5fiaF1ozmhL+q/M0kJ3YrbuuZKIaetDF+ZuY3mks7uj/arGWxo31Fs36DG3q38aQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4FX+AcL6c1W3I+QxAAAAAElFTkSuQmCC) }
+
 
 .iphonebadge {
   border-radius:99px;
