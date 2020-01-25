@@ -2,6 +2,9 @@
 # renofloorball.github.io
 #
 
+<!-- ${require('./partial.html')} -->
+<!-- ${require('../mainOrig.tpl.html')} -->
+
 
 Original GoDaddy A record points to: 184.168.221.61
 
