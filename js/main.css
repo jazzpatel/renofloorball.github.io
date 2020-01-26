@@ -158,13 +158,13 @@ nav.navbar.shrink {
 }
 
 
-section a {
+.navbar section a {
     margin: 0 auto;
     font-size: 2.0rem;
     padding: 1.25rem 2.5rem;
     display: block;
     background-color: #009ac9;
-    border: 1px solid transparent;
+    border: 1px dashed;
     color: #ffffff;
     font-weight: 300;
     -webkit-border-radius: 3px;
@@ -174,7 +174,7 @@ section a {
     transition: all 0.3s ease-in-out;
   }
   
-  section a:hover {
+  .navbar section a:hover {
     background-color: #ffffff;
     color: #009ac9;
     border-color: #009ac9;
